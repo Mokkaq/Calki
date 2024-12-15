@@ -1,0 +1,63 @@
+\doxysection{Thread\+Data Struct Reference}
+\hypertarget{struct_thread_data}{}\label{struct_thread_data}\index{ThreadData@{ThreadData}}
+
+
+Struktura przechowująca dane potrzebne do pracy każdego wątku.  
+
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_thread_data_a46083a09862653a019308f24e00a4808}{thread\+\_\+id}} = 0
+\item 
+int \mbox{\hyperlink{struct_thread_data_a742457ccf019010f97b8a6d28bbed83c}{num\+\_\+threads}} = 0
+\item 
+int \mbox{\hyperlink{struct_thread_data_a5e3aee8d58da274728f69ce4b6e6f129}{num\+\_\+intervals}} = 0
+\item 
+double \mbox{\hyperlink{struct_thread_data_a2b3ae50d9df41aab34d349ecea0900fd}{step}} = 0.\+0
+\item 
+double \mbox{\hyperlink{struct_thread_data_af406253dd3c8013d08f32fc98d52a94c}{partial\+\_\+sum}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struktura przechowująca dane potrzebne do pracy każdego wątku. 
+
+Struktura ta zawiera parametry pracy wątku, takie jak identyfikator wątku, liczba wątków, liczba przedziałów całkowania, rozmiar kroku oraz częściowa suma obliczona przez dany wątek. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_thread_data_a5e3aee8d58da274728f69ce4b6e6f129}\index{ThreadData@{ThreadData}!num\_intervals@{num\_intervals}}
+\index{num\_intervals@{num\_intervals}!ThreadData@{ThreadData}}
+\doxysubsubsection{\texorpdfstring{num\_intervals}{num\_intervals}}
+{\footnotesize\ttfamily \label{struct_thread_data_a5e3aee8d58da274728f69ce4b6e6f129} 
+int Thread\+Data\+::num\+\_\+intervals = 0}
+
+Liczba podziałów przedziału całkowania. \Hypertarget{struct_thread_data_a742457ccf019010f97b8a6d28bbed83c}\index{ThreadData@{ThreadData}!num\_threads@{num\_threads}}
+\index{num\_threads@{num\_threads}!ThreadData@{ThreadData}}
+\doxysubsubsection{\texorpdfstring{num\_threads}{num\_threads}}
+{\footnotesize\ttfamily \label{struct_thread_data_a742457ccf019010f97b8a6d28bbed83c} 
+int Thread\+Data\+::num\+\_\+threads = 0}
+
+Całkowita liczba wątków. \Hypertarget{struct_thread_data_af406253dd3c8013d08f32fc98d52a94c}\index{ThreadData@{ThreadData}!partial\_sum@{partial\_sum}}
+\index{partial\_sum@{partial\_sum}!ThreadData@{ThreadData}}
+\doxysubsubsection{\texorpdfstring{partial\_sum}{partial\_sum}}
+{\footnotesize\ttfamily \label{struct_thread_data_af406253dd3c8013d08f32fc98d52a94c} 
+double Thread\+Data\+::partial\+\_\+sum = 0.\+0}
+
+Wynik częściowy obliczony przez wątek. \Hypertarget{struct_thread_data_a2b3ae50d9df41aab34d349ecea0900fd}\index{ThreadData@{ThreadData}!step@{step}}
+\index{step@{step}!ThreadData@{ThreadData}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily \label{struct_thread_data_a2b3ae50d9df41aab34d349ecea0900fd} 
+double Thread\+Data\+::step = 0.\+0}
+
+Rozmiar kroku, czyli szerokość jednego podprzedziału. \Hypertarget{struct_thread_data_a46083a09862653a019308f24e00a4808}\index{ThreadData@{ThreadData}!thread\_id@{thread\_id}}
+\index{thread\_id@{thread\_id}!ThreadData@{ThreadData}}
+\doxysubsubsection{\texorpdfstring{thread\_id}{thread\_id}}
+{\footnotesize\ttfamily \label{struct_thread_data_a46083a09862653a019308f24e00a4808} 
+int Thread\+Data\+::thread\+\_\+id = 0}
+
+Identyfikator wątku. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+calki.\+cpp\end{DoxyCompactItemize}
